@@ -133,6 +133,14 @@ Prefab:
       propertyPath: m_Name
       value: MainCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 76f3ff6890a0cec40b882c33c462919e, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 5c9af36e367a28349a66fb5e66d9d1f7, type: 2}
+    - target: {fileID: 9500000, guid: 76f3ff6890a0cec40b882c33c462919e, type: 3}
+      propertyPath: m_ApplyRootMotion
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 76f3ff6890a0cec40b882c33c462919e, type: 3}
   m_IsPrefabParent: 0
