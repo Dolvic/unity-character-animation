@@ -15,15 +15,18 @@ public class CharacterMovement : MonoBehaviour
 
     public void Update()
     {
-        SetSpeed();
+        DetermineSpeed();
         var vertical = Input.GetAxis("Vertical");
+        var horizontal = Input.GetAxis("Horizontal");
 
         var isMoving = vertical > 0;
         anim.SetBool("IsMoving", isMoving);
+        anim.SetFloat("TurnSpeed", horizontal);
+
         anim.SetFloat("MoveSpeed", moveSpeed);
     }
 
-    private void SetSpeed()
+    private void DetermineSpeed()
     {
         KeyCode[] speedKeys = {KeyCode.Alpha1, KeyCode.Alpha2, KeyCode.Alpha3, KeyCode.Alpha4, KeyCode.Alpha5, KeyCode.Alpha6, KeyCode.Alpha7, KeyCode.Alpha8, KeyCode.Alpha9, KeyCode.Alpha0};
         var speed = moveSpeed;
